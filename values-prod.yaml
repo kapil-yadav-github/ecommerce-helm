@@ -1,0 +1,14 @@
+namespace: prod
+
+replicaCount: 3
+
+image:
+  tag: v2
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+ingress:
+  host: prod.order.local

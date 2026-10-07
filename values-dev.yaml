@@ -1,0 +1,14 @@
+namespace: dev
+
+replicaCount: 1
+
+image:
+  tag: v1
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+ingress:
+  host: dev.order.local
